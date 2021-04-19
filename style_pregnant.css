@@ -1,0 +1,212 @@
+*{
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.header{
+    background: url('image_pregnant/due-date-hero.png');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.header .pregnant{
+    width: 150px;
+    right: 150px;
+    position: absolute;
+    top: 69px;
+
+}
+.header_text{
+    
+    color: white;
+    width: 50%;
+    padding-left: 110px;
+    padding-top: 60px;
+    
+}
+.header_text h3{
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+.header_text .text_small{
+    padding-top: 10px;
+    letter-spacing: 1px;
+    width: 110%;
+    line-height: 25px;
+}
+.content{
+    padding: 100px 100px;
+    width: 100%;
+    
+}
+.content .container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container .container_caculator{
+    width: 48%;
+    background-color:white;
+   height: 40%;
+    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 10%);
+
+    border-radius: 10px;
+}
+.container .container_recommend{
+    width: 45%;
+   
+ background-color: #f2f2f2;
+ border-radius: 10px;
+}
+.recommend_content{
+    padding: 50px 30px;
+}
+.recommend_content .strong{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+.recommend_child2,.recommend_child6{
+    padding: 0px 30px;
+}
+.recommend_content h1{
+    font-size: 32px;
+}
+.recommend_content p{
+    color: #4c4c4c;
+    font-size: 17px;
+}
+.recommend_child2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.recommend_child4{
+    padding-top: 30px;
+}
+.caculator_content{
+    padding: 50px 50px;
+    
+    
+}
+.caculator_content h1{
+    font-size: 30px;
+}
+.caculator_content p{
+    color: #04244d;
+    line-height: 25px;
+}
+.caculator_text{
+    text-align: center;
+}
+.final_caculator{
+    padding: 40px 60px;
+}
+.final_caculator input{
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid #d9d9d9
+}
+.final_caculator p{
+    font-size: 12px;
+    color: rgb(233, 81, 107);
+    font-weight: 600;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.final_caculator .btn{
+    padding-top: 30px;
+}
+.final_caculator button{
+    padding: 15px 110px;
+    border-radius: 7px;
+    border: none;
+    background-color: rgb(233, 81, 107);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.final_caculator button:hover{
+    background-color: rgb(223, 41, 72);
+}
+input::placeholder{
+    padding-left: 10px;
+    
+}
+.caculator_result{
+    width: 45%;
+    background-color:white;
+   height: 40%;
+    box-shadow: 0 4px 15px 0 rgb(0 0 0 / 10%);
+
+    border-radius: 10px;
+}
+.result_text{
+    text-align: center;
+}
+.result_content{
+    padding: 50px 40px;
+}
+.result_child1{
+    width: 100%;
+    height: 60px;
+    background-color: #f2f2f2;
+    border-bottom: 4px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.result_child1 p{
+    padding-left: 50px;
+    font-size: 13px;
+    font-weight: bold;
+    color:#04244d ;
+}
+.result_child1 select{
+    margin-right: 40px;
+    padding: 10px;
+    border: 2px solid #d9d9d9;
+    border-radius: 7px;
+    cursor: pointer;
+    color: rgb(223, 41, 72);
+    font-weight: bold;
+    font-size: 13px;
+
+
+}
+.result_child2{
+    width: 100%;
+    height: 80px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.result_child2 p{
+    padding-left: 50px;
+    font-size: 17px;
+    
+    
+}
+.result_child2 h3{
+    padding-right: 70px;
+    
+}
+.result_child2 span{
+    color: rgb(223, 41, 72);
+}
+.result_container{
+    padding-top: 50px;
+}
+.result_text{
+    line-height: 30px;
+    color: rgb(223, 41, 72)
+}

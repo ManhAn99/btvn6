@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style_heartbeat.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section class="header" id="header">
+    <h3>HeartBeat</h3>
+    <h3><a href="./index.html" style="text-decoration: none;color: white;position: absolute;left: 29px;top:25px;font-size: 20px;">Home</a></h3>
+  </section>
+ 
+  <div class="application">
+    <div class="application_content">
+      <div class="application_img">
+        <img src="image2/Target-Heart-Rate-1.png" alt="">
+      </div>
+      <div class="application_text">
+        <h3>Ứng dụng đo nhịp tim mục tiêu ổn định cho mọi lứa tuổi tham khảo</h3>
+        <p>Xác định nhịp tim mục tiêu của bạn thật dễ dàng với cách tính nhịp tim mục tiêu để nhận được nhiều lợi ích nhất từ việc tập luyện.</p>
+      </div>
+    </div>
+  </div>
+  <section class="border">
+    <div class="border_content">
+
+    </div>
+  </section>
+
+
+  <section class="caculator_heartbeat">
+    <div class="caculator_content">
+      
+        <div class="gender_text">
+          <p>Cách tính giúp bạn tập luyện tốt nhất: Nhập tuổi của bạn để tìm nhịp tim mục tiêu trong khi tập thể dục. Bạn sẽ tập luyện một cách hiệu quả nhất bằng cách duy trì mức nhịp tim/phút này.</p>
+      </div>
+      <div class="caculator_box">
+        <div class="box1">
+         <div class="gender_box">
+          <div class="gender_img" id="gender_female">
+            <img src="image2/female-icon.png" alt="">
+          </div>
+          <div class="gender_img" style="margin-left: 30px;" id="gender_male">
+            <img src="image2/male-icon.png" alt="" >
+          </div>
+         </div>
+        <form action="" id="form">
+         <div class="age_text">
+            <span>Tuổi</span><br>
+            <input type="text" name="age">
+          </div>
+          <div class="box_btn">
+            <button type="submit" >Kết quả </button>
+          </div>
+        </form>
+        </div>
+
+        <div class="box2">
+         <div class="box2_1">
+           <p>Công cụ này sẽ giúp bạn xác định được nhịp tim khi tập thể dục phù hợp với độ tuổi, tránh trường hợp quá sức (nhịp tim cao) hay tập không hiệu quả (nhịp tim thấp). Từ đó có được nhiều lợi ích nhất từ việc tập luyện.</p>
+         </div>
+         <div class="box2_1">
+           <h3>Nhịp tim bình thường là bao nhiêu?</h3>
+           <p>Trước khi tìm hiểu về nhịp tim mục tiêu trong luyện tập, bạn cần phải biết nhịp tim lúc nghỉ ngơi (hay nhịp tim ổn định) của mình. Nhịp tim lúc nghỉ ngơi là số lần tim đập mỗi phút trong khi bạn nghỉ ngơi. Bạn có thể kiểm tra nhịp tim này vào buổi sáng sau khi mới ngủ dậy.
+
+            <br>Theo Viện Y tế Quốc gia, nhịp tim trung bình khi nghỉ ngơi:
+            
+           <br>- Đối với trẻ em từ 10 tuổi trở lên và người lớn (bao gồm cả người cao niên): 60-100 nhịp mỗi phút
+          <br>-  Đối với các vận động viên được đào tạo tốt: 40-60 nhịp mỗi phút.</p>
+         </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="result" style="display: none;" id="result">
+    <div class="result_content">
+    <div class="max" >
+      <div class="max_text" >
+        <p>Nhịp tim khi bạn tập thể dục là </p>
+     <p><span id="heartbeat_max"></span> nhịp</p>  
+      </div>
+      <div class="max_img">
+        <img src="image2/icons8-aed-96.png" alt="">
+      </div>
+    </div>
+
+    <div class="min">
+      <div class="min_text">
+        <p>Nhịp tim tối đa của bạn là </p>
+        <p> <span><span id="hhr_min"></span> nhịp</span> - <span><span id="hhr_max"></span> nhịp</span></p>
+      </div>
+      <div class="min_img">
+        <img src="image2/icons8-medical-heart-96.png" alt="">
+      </div>
+    </div>
+  </div>
+  </section>
+  
+  <script src="main_heartbeat.js"></script>
+</body>
+</html>
