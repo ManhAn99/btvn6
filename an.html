@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.12.0/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section class="header">
+      <h1><span> BMI </span> Caculator</h1>
+      <div class="header_text">
+        <p onclick="showSearch()" id="search">Tìm kiếm thông tin</p>
+        <p>Liên Hệ</p>
+      </div>
+    </section>
+
+    <section class="background">
+      <div class="background_img">
+        <img src="image/bg.png" alt="" />
+      </div>
+      <div class="background_text">
+        <div class="big_text">
+          <h2>Tính chỉ số BMI - Chỉ số khối cơ thể</h2>
+        </div>
+        <div class="small_text">
+          <p>
+            Sử dụng công cụ này để kiểm tra chỉ số khối cơ thể (BMI) để biết bạn
+            có đang ở mức cân nặng hợp lý hay không. Bạn cũng có thể kiểm tra
+            chỉ số BMI của trẻ tại đây.
+          </p>
+        </div>
+      </div>
+      <div class="weight_img">
+        <img src="image/weight.png" alt="" />
+      </div>
+    </section>
+
+    <section class="search">
+      <img
+        onclick="closesearch()"
+        id="search_close"
+        src="image/close.png"
+        alt=""
+        style="
+          width: 30px;
+          height: 30px;
+          position: absolute;
+          top: 15px;
+          right: 23px;
+          cursor: pointer;
+        "
+      />
+      <div class="search_content" style="margin-left: 100px">
+        <ul>
+          <li><a href="https://benhvienthucuc.com/cac-benh-thuong-gap-o-duong-tieu-hoa/?gclid=CjwKCAjw07qDBhBxEiwA6pPbHqeuRizoeiVKXUULiJk-doJp3QerKLAIKDsaQKD4EWtFA0TmwIpJpxoCih4QAvD_BwE">Bệnh tiêu hóa </a></li>
+          <li><a href="http://benhvien108.vn/cham-soc-giac-ngu-cua-be.htm">Chăm sóc giấc ngủ </a></li>
+          <li><a href="https://benhvienthucuc.com/dau-hieu-mang-thai-som/?gclid=CjwKCAjw07qDBhBxEiwA6pPbHqRk2bGNFh3bC0pqPaoh20wQp9ujkSg1OiSew_e0LrgIJSD-WJQhdhoCHyMQAvD_BwE">Mang thai </a></li>
+          <li><a href="http://benhvienpsnbd.com.vn/dich-vu/cham-soc-suc-khoe-phu-nu.htm">Sức khỏe phụ nữ </a></li>
+          <li><a href="https://giadinhnestle.com.vn/sua-chua-sanh-quyen-acti-v?gclsrc=aw.ds&&utm_source=Google&utm_medium=Search&utm_campaign=VN_MULT_acv_vi_GO_Other_NA_NA_CON_RTDDRY_ActiV-AWO-Affinity-Healthy_12549909300&utm_content=acv_Stext_%C4%82n-L%C3%A0nh-M%E1%BA%A1nh&gclid=CjwKCAjw07qDBhBxEiwA6pPbHgqOXWRZRxJQdehlNmMTEEbV-XpnPcYxqUDf8Ydo7a4W_qghaqhKsBoCjwEQAvD_BwE">Ăn uống lành mạnh </a></li>
+          <li><a href="https://2020.meosonghiendai.com/74-thoi-quen-lanh-manh-cai-thien-dang-ke-cuoc-song-cua-ban/">Thói quen lành mạnh </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh cơ xương khớp </a></li>
+          <li><a href="#">Bệnh tim mạch </a></li>
+          <li><a href="#">Da liễu </a></li>
+          <li><a href="#">Nuôi dạy con </a></li>
+          <li><a href="#">Sức khỏe răng miệng </a></li>
+          <li><a href="#">Thuốc và thực phẩm chức năng </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh hô hấp</a></li>
+          <li><a href="#">Bệnh truyền nhiễm </a></li>
+          <li><a href="#">Dị ứng </a></li>
+          <li><a href="#">Sức khỏe </a></li>
+          <li><a href="#">Sức khỏe tình dục </a></li>
+          <li><a href="#">Tiểu Đường </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh thận và đường tiết liệu </a></li>
+          <li><a href="#">Bệnh não&hệ thần kinh</a></li>
+          <li><a href="#">Lão hóa lành mạnh </a></li>
+          <li><a href="#">Sức khỏe nam giới </a></li>
+          <li><a href="#">Thể dục thể thao </a></li>
+          <li><a href="#">Thói quen lành mạnh </a></li>
+        </ul>
+      </div>
+      <div class="search_content">
+        <ul>
+          <li><a href="#">Bệnh tai mũi họng </a></li>
+          <li><a href="#">Bệnh về máu</a></li>
+          <li><a href="#">Dược liệu </a></li>
+          <li><a href="#">Sức khỏe mắt </a></li>
+          <li><a href="#">Tâm lý - Tâm thần </a></li>
+          <li><a href="#">Ung thư - Bướu</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="caculator">
+      <div class="caculator_content">
+        <div class="caculator_gender">
+          <div class="text_gender">
+            <h3
+              style="
+                font-size: 20px;
+                color: rgb(121, 118, 118);
+                font-weight: 700;
+              "
+            >
+              Giới tính của bạn
+            </h3>
+          </div>
+          <div class="img_gender">
+            <div
+              class="image_gender"
+              id="male"
+              onclick="checkMale()"
+              selected="false"
+            >
+              <img
+                class="color_gender"
+                src="https://img.icons8.com/bubbles/100/000000/male-beloved.png"
+              />
+            </div>
+            <div
+              class="image_gender"
+              id="female"
+              style="margin-left: 20px"
+              onclick="checkFemale()"
+            >
+              <img
+                class="color_gender"
+                src="https://img.icons8.com/bubbles/100/000000/gemologist-female.png"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="caculator_select">
+          <form action="" id="select">
+            <div class="select_content">
+              <span>Bạn bao nhiêu tuổi?(năm)</span><br />
+              <input
+                type="text"
+                name="age"
+                onclick="change_input1()"
+                id="input1"
+              />
+            </div>
+            <div class="select_content">
+              <span>Bạn cao bao nhiêu?(cm)</span><br />
+              <input type="text" name="height" onclick="change_input2()" />
+            </div>
+            <div class="select_content">
+              <span>Cân nặng của bạn?(kg)</span><br />
+              <input type="text" name="weight" onclick="change_input3()" />
+            </div>
+            <div class="btn">
+              <button id="select_btn" onclick="aaa()">Tính Ngay</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="container" id="container" style="display: none">
+      <div class="content under_weight">
+        <p class="container_text" id="container_text" style="display: none">
+          Chỉ số BMI của bạn là : <span id="showBMI"></span>
+        </p>
+        <div class="container_content">
+          <div class="box">
+            <div class="box_image">
+              <img id="underweight-male-image" src="" alt="" />
+            </div>
+            <div class="text">
+              <p id="underweight-text" class="none_text">
+                Thiếu cân<br />
+                < 18.5
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_image">
+              <img id="healthy-male-image" src="" alt="" />
+            </div>
+            <div class="text">
+              <p id="healthy-text" class="none_text">
+                Khỏe mạnh <br />18.5 - 24.9
+              </p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="box_image">
+              <img id="overweight-male-image" src="" alt="" />
+            </div>
+            <div class="text">
+              <p id="overweight-text" class="none_text">
+                Thừa cân <br />
+                25 - 29.9
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box_image">
+              <img id="obesetype1-male-image" src="" alt="" />
+            </div>
+            <div class="text">
+              <p id="obesetype1-text" class="none_text">
+                Tiểu đường type 1 <br />
+                30 - 34.9
+              </p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="box_image">
+              <img id="obesetype2-male-image" src="" alt="" />
+            </div>
+            <div class="text">
+              <p id="obesetype2-text" class="none_text display_text">
+                Tiểu đường type 2 <br />
+                35 <
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="how" id="how" style="display: none">
+      <div class="how_solution" id="how_solution" style="display: none">
+        <div class="how_status">
+          <div class="status" id="status1">
+            <h4 id="status_text">Tình trạng</h4>
+          </div>
+          <div class="status" id="risk">
+            <h4 id="risk_text">Nguy cơ</h4>
+          </div>
+          <div class="status" id="recommend">
+            <h4 id="recommend_text">Gợi ý</h4>
+          </div>
+        </div>
+        <div class="solution">
+          <div
+            class="solution_underweight"
+            style="display: none"
+            id="solution_underweight"
+          >
+            <p id="status_underweight">
+              Bạn được xem là thiếu cân nếu có chỉ số BMI dưới 18,5.
+            </p>
+            <p id="risk_underweight" style="display: none">
+              Các nghiên cứu chỉ ra rằng nững người bị thiếu cân nặng có nguy cơ
+              bị suy dinh dưỡng cao hơn, khả năng miễn dịch giảm, bị vô sinh,
+              loãng xương, vết thương lâu lành và dễ gặp các biến chứng sau phẫu
+              thuật.
+            </p>
+            <p id="recommend_underweight" style="display: none">
+              Nếu bạn muốn tăng cân, điều quan trọng trước tiên là phải xác định
+              bạn cần bao nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản
+              và các hoạt động hàng ngày của cơ thể.
+
+              <br />Tiếp theo, hãy chọn các loại thức ăn và đồ uống có thể cung
+              cấp lượng calo cao hơn mức tiêu thụ của bạn – lên đến 300-500 kcal
+              mỗi ngày. Ví dụ, nếu nhu cầu calo hàng ngày của bạn là 1700 kcal,
+              bạn cần tiêu thụ tổng cộng 2000-2200 kcal mỗi ngày để tăng cân.
+            </p>
+          </div>
+
+          <div
+            class="solution_healthy"
+            style="display: none"
+            id="solution_healthy"
+          >
+            <p id="status_healthy">
+              Bạn được coi là có trọng lượng cơ thể lý tưởng nếu chỉ số BMI rơi
+              vào khoảng 18,5 đến 22,9.
+            </p>
+            <p id="risk_healthy" style="display: none">
+              Ngay cả những người có chỉ số BMI khỏe mạnh cũng có thể đứng trước
+              nguy cơ mắc một số tình trạng sức khoẻ. Vì vậy, điều quan trọng là
+              cần xây dựng một lối sống lành mạnh thông qua chế độ ăn uống thích
+              hợp, vận động hợp lý và khám sức khỏe định kỳ để duy trì sức khỏe
+              tốt nhất có thể.
+            </p>
+            <p id="recommend_healthy" style="display: none">
+              Nếu bạn muốn duy trì trọng lượng cơ thể, đầu tiên hãy xác định bạn
+              cần bao nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản và
+              các hoạt động hàng ngày của cơ thể.
+
+              <br />
+              Chọn các thực phẩm và đồ uống cung cấp một lượng calo tương đương
+              với nhu cầu calo hàng ngày của bạn. Ví dụ: Nếu nhu cầu calo hàng
+              ngày của bạn là 1950 kcal, bạn cần tiêu thụ tổng cộng 1950 kcal
+              mỗi ngày để duy trì cân nặng của mình.
+            </p>
+          </div>
+          <div
+            class="solution_overweight"
+            style="display: none"
+            id="solution_overweight"
+          >
+            <p id="status_overweight">
+              Bạn được xem là thừa cân nếu có chỉ số BMI nằm trong khoảng từ 23
+              đến 24,9.
+            </p>
+            <p id="risk_overweight" style="display: none">
+              Thừa cân có thể làm tăng nguy cơ tiến triển bệnh tiểu đường týp 2,
+              tăng huyết áp, bệnh tim mạch, đột quỵ, viêm xương khớp, bệnh gan
+              nhiễm mỡ, bệnh thận và một số bệnh ung thư.
+            </p>
+            <p id="recommend_overweight" style="display: none">
+              Nếu bạn muốn giảm cân, trước tiên bạn phải xác định lượng calo cần
+              nạp mỗi ngày để thực hiện các chức năng cơ bản và các hoạt động
+              hàng ngày của cơ thể. Tiếp theo, hãy chọn những loại thức ăn và đồ
+              uống cung cấp ít calo hơn nhu cầu hàng ngày của bạn. <br />
+              <span style="font-weight: 700">Ví dụ</span>, nếu nhu cầu calo tiêu
+              thụ hàng ngày của bạn là 2100 kcal, hãy cố gắng giảm tổng lượng
+              calo đó xuống 300-500 kcal. Giảm tới 500 kcal mỗi ngày sẽ giúp bạn
+              giảm tới 0,5-1 kg cân nặng mỗi tuần.
+
+              <br />
+              <i style="font-weight: bold"
+                >Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</i
+              >
+              <br />
+              Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam
+              giới cần tới 2500 kcal mỗi ngày. <br />
+              Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì
+              các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày
+              sẽ có tác động xấu đến cơ thể của bạn.
+            </p>
+          </div>
+
+          <div
+            class="solution_obese1"
+            style="display: none"
+            id="solution_obese1"
+          >
+            <p id="status_obese1">
+              Bạn được coi là béo phì cấp độ 1 nếu bạn có chỉ số BMI từ 25 đến
+              29,9.
+            </p>
+            <p id="risk_obese1" style="display: none">
+              Béo phì có thể làm tăng nguy cơ tiến triển bệnh tiểu đường týp 2,
+              tăng huyết áp, bệnh tim mạch, đột quỵ, viêm xương khớp, bệnh gan
+              nhiễm mỡ, bệnh thận và một số bệnh ung thư.
+            </p>
+            <p id="recommend_obese1" style="display: none">
+              Nếu bạn muốn giảm cân, trước tiên bạn phải xác định mình cần bao
+              nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản và các hoạt
+              động hàng ngày của cơ thể.<br />
+              Tiếp theo, hãy ăn các món cung cấp ít calo hơn nhu cầu hàng ngày
+              của bạn. <br />
+              Ví dụ: nếu yêu cầu lượng calo hàng ngày của bạn là 2100 kcal, hãy
+              cố gắng giảm tổng lượng calo đó xuống 300-500 kcal. Giảm tới 500
+              kcal mỗi ngày sẽ hỗ trợ bạn giảm tới 0,5-1 kg trọng lượng mỗi
+              tuần.
+
+              <br /><br />
+              <i style="font-weight: bold">
+                Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</i
+              >
+              <br />
+              Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam
+              giới cần tới 2500 kcal mỗi ngày. <br />Tuy nhiên, mỗi người cần
+              tối thiểu 1200 kcal mỗi ngày để duy trì các chức năng chính của cơ
+              thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày sẽ có tác động xấu đến cơ
+              thể của bạn.
+            </p>
+          </div>
+
+          <div
+            class="solution_obese2"
+            style="display: none"
+            id="solution_obese2"
+          >
+            <p id="status_obese2">
+              Bạn được coi là béo phì cấp độ 2 nếu có chỉ số BMI trên 30.
+            </p>
+            <p id="risk_obese2" style="display: none">
+              Béo phì có thể làm tăng nguy cơ tiến triển bệnh tiểu đường týp 2,
+              tăng huyết áp, bệnh tim mạch, đột quỵ, viêm xương khớp, bệnh gan
+              nhiễm mỡ, bệnh thận và một số bệnh ung thư.
+            </p>
+            <p id="recommend_obese2" style="display: none">
+              Nếu bạn muốn giảm cân, trước tiên bạn phải xác định mình cần bao
+              nhiêu calo mỗi ngày để thực hiện các chức năng cơ bản và các hoạt
+              động hàng ngày của cơ thể.<br />
+              Tiếp theo, hãy ăn các món cung cấp ít calo hơn nhu cầu hàng ngày
+              của bạn. <br />
+              Ví dụ: nếu yêu cầu lượng calo hàng ngày của bạn là 2100 kcal, hãy
+              cố gắng giảm tổng lượng calo đó xuống 300-500 kcal. Giảm tới 500
+              kcal mỗi ngày sẽ hỗ trợ bạn giảm tới 0,5-1 kg trọng lượng mỗi
+              tuần. <br /><br />
+              <i style="font-weight: bold">
+                Nhu cầu calo tối thiểu của mỗi người là bao nhiêu?</i
+              >
+
+              <br />
+              Trung bình, nữ giới cần khoảng 2000 kcal mỗi ngày, trong khi nam
+              giới cần tới 2500 kcal mỗi ngày.
+              <br />
+              Tuy nhiên, mỗi người cần tối thiểu 1200 kcal mỗi ngày để duy trì
+              các chức năng chính của cơ thể. Tiêu thụ ít hơn 1200 kcal mỗi ngày
+              sẽ có tác động xấu đến cơ thể của bạn.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="information" id="information">
+      <div class="information_content">
+        <div class="concept">
+          <div class="concept_img">
+            <img src="image/info-icon.png" alt="" />
+          </div>
+          <div class="concept_text">
+            <h3>Thông tin</h3>
+          </div>
+        </div>
+
+        <div class="specific_information">
+          <div class="concept_bmi">
+            <div class="concept_bmi_content">
+              <h4 id="text_define">
+                Chỉ số khối cơ thể (BMI) là gì? - Định nghĩa BMI
+              </h4>
+              <i class="fal fa-plus" id="define"></i>
+            </div>
+            <div class="bmi_explain" style="display: none" id="bmi_define">
+              <i
+                >Chỉ số khối cơ thể (BMI) là phép đo trọng lượng của một người
+                tương ứng với chiều cao của người đó. Chỉ số BMI cao có thể cho
+                thấy mức độ béo phì hay thừa cân nhiều. BMI có thể là một công
+                cụ sàng lọc nhưng không dùng chẩn đoán tình trạng béo phì hoặc
+                sức khỏe cá nhân. Để xác định chỉ số BMI có tiềm ẩn một nguy cơ
+                ảnh hưởng sức khỏe hay không, bác sĩ hay các chuyên gia y tế sẽ
+                cần thực hiện thêm những đánh giá khác như đo độ dày nếp gấp da,
+                đánh giá chế độ ăn uống, hoạt động thể chất và tiền sử gia
+                đình.</i
+              >
+            </div>
+          </div>
+
+          <div class="concept_bmi" style="padding-top: 30px">
+            <div class="concept_bmi_content">
+              <h4 id="text_explain">Giải thích chỉ số BMI</h4>
+              <i class="fal fa-plus" id="explain"></i>
+            </div>
+            <div
+              id="bmi_explain"
+              class="bmi_explain"
+              style="height: auto; display: none"
+            >
+              <i
+                >Đối với người lớn từ 20 tuổi trở lên, BMI được tính bằng cách
+                sử dụng các phân loại trạng thái cân nặng tiêu chuẩn. Các chuẩn
+                này giống nhau với nam giới và phụ nữ ở mọi thể trạng và lứa
+                tuổi. Đối với trẻ em và thanh thiếu niên, BMI phân biệt theo
+                tuổi và giới tính và thường được gọi là BMI theo tuổi. Ở trẻ em,
+                lượng chất béo trong cơ thể cao có thể dẫn đến các bệnh liên
+                quan đến cân nặng và các vấn đề sức khỏe khác. Thiếu cân cũng có
+                thể tăng nguy cơ mắc một số tình trạng sức khỏe, bệnh lý. Chỉ số
+                BMI cao thường cho thấy cơ thể thừa cân. Chỉ số này không trực
+                tiếp đo lượng mỡ trong cơ thể nhưng có tương quan với các phép
+                đo trực tiếp xác định lượng mỡ trong cơ thể (1,2,3).</i
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="question" id="question" style="display: none">
+      <div class="question_container">
+        <div class="regular_question">
+          <h4 style="color: #8c8c8c; font-size: 15px">
+            <span><img src="image/info-icon.png" alt="" /></span> Câu hỏi thường
+            gặp
+          </h4>
+        </div>
+        <div class="question_content" id="question_underweight">
+          <div class="question_content_box">
+            <div class="box_text">
+              <h4 id="text_icon1"></h4>
+              <i class="fal fa-plus" id="icon1"></i>
+            </div>
+            <div class="box_content" id="box_icon1" style="display: none">
+              <i id="text_content_icon1"></i>
+            </div>
+          </div>
+
+          <div class="question_content_box">
+            <div class="box_text">
+              <h4 id="text_icon2"></h4>
+              <i class="fal fa-plus" id="icon2"></i>
+            </div>
+            <div class="box_content" id="box_icon2" style="display: none">
+              <i id="text_content_icon2"></i>
+            </div>
+          </div>
+
+          <div class="question_content_box">
+            <div class="box_text">
+              <h4 id="text_icon3"></h4>
+              <i class="fal fa-plus" id="icon3"></i>
+            </div>
+            <div class="box_content" id="box_icon3" style="display: none">
+              <i id="text_content_icon3"></i>
+            </div>
+          </div>
+
+          <div class="question_content_box">
+            <div class="box_text">
+              <h4 id="text_icon4"></h4>
+              <i class="fal fa-plus" id="icon4"></i>
+            </div>
+            <div class="box_content" id="box_icon4" style="display: none">
+              <i id="text_content_icon4"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="email" id="email" style="display: none;">
+     <div class="email_box">
+      <div class="email_content">
+     <div class="email_content_final">
+        <h4 style="font-size: 25px; color: rgb(56, 53, 53); font-weight: 600; font-family:Verdana, Geneva, Tahoma, sans-serif; padding-top: 10px;">Đạt mốc cân nặng lý tưởng</h4>
+     <div class="signup">
+        <h5>Đăng ký nhận bản tin sức khỏe,luyện tập thể thao từ các chuyên gia y tế và chuyên gia dinh dưỡng cộng tác cùng chúng tôi.</h5>
+      </div>
+        <input type="text" placeholder="Địa chỉ email của bạn" style="width:55%;height:45px;border: .5px solid rgb(226, 226, 221);border-radius: 5px;">
+      <div class="btn"><button>Đăng ký</button></div>
+    </div>
+  </div>
+</div>
+    </section>
+   
+   
+   
+   
+    <section class="footer" style="font-family: 'Open Sans', sans-serif">
+      <div class="footer_content">
+        <div class="footer_content_banner" style="cursor: pointer;">
+          <div class="footer_content_header">
+            <h4 style="color: white; font-size: 30px">BMI Caculator</h4>
+          </div>
+          <div class="footer_content_box1">
+            <div
+              class="footer_content_child1"
+              style="width: 30%; font-size: 24px"
+            >
+              <h5 style="color: rgb(154, 162, 172)">
+                Đăng ký nhận những thông tin bổ ích về y tế, sức khỏe và dinh
+                dưỡng
+              </h5>
+            </div>
+
+            <div id="child2"
+              class="footer_content_child1"
+              style="font-size: 24px; font-weight: 700"
+            >
+              <ul>
+                <li>Chuyên đề sức khỏe</li>
+                <li>Đặt lịch hẹn</li>
+              </ul>
+            </div>
+
+            <div class="footer_content_child1" id="child3">
+              <ul>
+                <li style="color: rgb(154, 162, 172)">Thông tin</li>
+                <li>Chính sách</li>
+                <li>Câu hỏi thường gặp</li>
+              </ul>
+            </div>
+
+            <div
+              class="footer_content_child1"
+              id="child4"
+              style="padding-top: 10px; padding-right: 128px"
+            >
+              <ul>
+                <li style="color: rgb(154, 162, 172)">Tự giới thiệu</li>
+                <li>Ban điêu hành</li>
+                <li>Tuyển dụng</li>
+                <li>Quảng cáo</li>
+                <li>Liên hệ</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer_content_final">
+          <div class="contact">
+         <div class="contact_text" style="color: white;padding-bottom: 10px; font-weight: 500; padding-left: 5px;">
+           <p>Kết nối với chúng tôi</p>
+         </div>
+         <div class="contact_img">
+           <div class="image">
+             <img src="image/icons8-facebook-96.png" alt="">
+           </div>
+
+           <div class="image">
+            <img src="image/icons8-twitter-96.png" alt="">
+          </div>
+
+          <div class="image">
+            <img src="image/icons8-tiktok-100 (1).png" alt="">
+          </div>
+
+          <div class="image">
+            <img src="image/icons8-play-button-96.png" alt="">
+          </div>
+         </div>
+          </div>
+          <div class="explore">
+            <div class="explore_text" style="width:70%">
+              <p style="color: rgb(154, 162, 172);">Tập đoàn L.A Health Group có trụ sở ở khắp các quốc gia,được nhiều người tin dùng</p>
+            </div>
+            <div class="explore_flag">
+              <div class="flag_img">
+                <img src="image1/icons8-england-30.png" alt="">
+              </div>
+              <div class="flag_img">
+                <img src="image1/icons8-flag-of-europe-40.png" alt="">
+              </div>
+              <div class="flag_img">
+                <img src="image1/icons8-mozambique-flag-30.png" alt="">
+              </div>
+              <div class="flag_img">
+                <img src="image1/icons8-vietnam-48 (1).png" alt="">
+              </div>
+              <div class="flag_img">
+                <img src="image1/icons8-vertical-flag-40.png" alt="">
+              </div>
+              <div class="flag_img">
+                <img src="image1/icons8-spain-flag-48.png" alt="">
+              </div>
+            </div>
+          </div>
+
+         
+        </div>
+        
+        <div class="copyright">
+         <div class="copyright_content">
+           <div class="text">
+             <p>© 2021 Bản quyền các bài viết thuộc tập đoàn L.A Health Group. Các bài viết của L.A Health Group và BMI Caculator chỉ có tính chất tham khảo, không thay thế cho việc chẩn đoán hoặc điều trị y khoa.</p>
+           </div>
+           <div class="copyright_img">
+             <img src="image1/dmca.png" alt="">
+           </div>
+         </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
